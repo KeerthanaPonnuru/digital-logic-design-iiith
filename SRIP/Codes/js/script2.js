@@ -6,7 +6,7 @@ x=x*0.90;
 if(sessionStorage.getItem("8bitCounter"))
 {
     var counter=
-    {
+  {
   "width":1098.693,
   "height":800,
   "showToolbox":true,
@@ -36,11 +36,86 @@ if(sessionStorage.getItem("8bitCounter"))
     {"type":"DSO","numInputs":8}
   ],
   "devices":[
+    {"type":"Joint","id":"dev0","x":144,"y":96,"label":"Joint","state":{"direction":0}},
+    {"type":"NOT","id":"dev1","x":232,"y":88,"label":"NOT"},
+    {"type":"Joint","id":"dev2","x":144,"y":320,"label":"Joint","state":{"direction":0}},
+    {"type":"AND","id":"dev3","x":368,"y":352,"label":"AND"},
+    {"type":"AND","id":"dev4","x":368,"y":416,"label":"AND"},
+    {"type":"XOR","id":"dev5","x":368,"y":528,"label":"XOR"},
+    {"type":"XOR","id":"dev6","x":368,"y":592,"label":"XOR"},
+    {"type":"XOR","id":"dev7","x":368,"y":472,"label":"XOR"},
+    {"type":"AND","id":"dev8","x":368,"y":288,"label":"AND"},
+    {"type":"OR","id":"dev9","x":368,"y":216,"label":"OR"},
+    {"type":"AND","id":"dev10","x":368,"y":144,"label":"AND"},
+    {"type":"OR","id":"dev11","x":368,"y":72,"label":"OR"},
+    {"type":"NOT","id":"dev12","x":368,"y":648,"label":"NOT"},
+    {"type":"XOR","id":"dev13","x":520,"y":560,"label":"XOR"},
+    {"type":"DC","id":"dev14","x":0,"y":312,"label":"DC"},
+    {"type":"BusOut","id":"dev15","x":816,"y":168,"label":"XY1"},
+    {"type":"BusOut","id":"dev16","x":816,"y":392,"label":"XY0"},
+    {"type":"PushOn","id":"dev17","x":88,"y":312,"label":"B"},
+    {"type":"PushOn","id":"dev18","x":88,"y":88,"label":"A"},
+    {"type":"PushOn","id":"dev19","x":104,"y":592,"label":"C"}
+  ],
+  "connectors":[
+    {"from":"dev0.in0","to":"dev18.out0"},
+    {"from":"dev1.in0","to":"dev0.out0"},
+    {"from":"dev2.in0","to":"dev17.out0"},
+    {"from":"dev3.in0","to":"dev1.out0"},
+    {"from":"dev3.in1","to":"dev2.out0"},
+    {"from":"dev4.in0","to":"dev0.out0"},
+    {"from":"dev4.in1","to":"dev2.out0"},
+    {"from":"dev5.in0","to":"dev0.out0"},
+    {"from":"dev5.in1","to":"dev2.out0"},
+    {"from":"dev6.in0","to":"dev19.out0"},
+    {"from":"dev6.in1","to":"dev19.out0"},
+    {"from":"dev7.in0","to":"dev0.out0"},
+    {"from":"dev7.in1","to":"dev2.out0"},
+    {"from":"dev8.in0","to":"dev0.out0"},
+    {"from":"dev8.in1","to":"dev2.out0"},
+    {"from":"dev9.in0","to":"dev0.out0"},
+    {"from":"dev9.in1","to":"dev2.out0"},
+    {"from":"dev10.in0","to":"dev1.out0"},
+    {"from":"dev10.in1","to":"dev17.out0"},
+    {"from":"dev11.in0","to":"dev1.out0"},
+    {"from":"dev11.in1","to":"dev2.out0"},
+    {"from":"dev12.in0","to":"dev14.out0"},
+    {"from":"dev13.in0","to":"dev5.out0"},
+    {"from":"dev13.in1","to":"dev6.out0"},
+    {"from":"dev15.in0","to":"dev11.out0"},
+    {"from":"dev15.in1","to":"dev10.out0"},
+    {"from":"dev15.in2","to":"dev9.out0"},
+    {"from":"dev15.in3","to":"dev8.out0"},
+    {"from":"dev15.in4","to":"dev3.out0"},
+    {"from":"dev15.in5","to":"dev3.out0"},
+    {"from":"dev15.in6","to":"dev4.out0"},
+    {"from":"dev15.in7","to":"dev4.out0"},
+    {"from":"dev16.in0","to":"dev13.out0"},
+    {"from":"dev16.in1","to":"dev13.out0"},
+    {"from":"dev16.in2","to":"dev7.out0"},
+    {"from":"dev16.in3","to":"dev7.out0"},
+    {"from":"dev16.in4","to":"dev7.out0"},
+    {"from":"dev16.in5","to":"dev8.out0"},
+    {"from":"dev16.in6","to":"dev9.out0"},
+    {"from":"dev16.in7","to":"dev12.out0"},
+    {"from":"dev17.in0","to":"dev14.out0"},
+    {"from":"dev18.in0","to":"dev14.out0"},
+    {"from":"dev19.in0","to":"dev14.out0"}
+  ]
+
+  /*"toolbox":[
+    {"type":"Joint"},
+    {"type":"PushOn"},
+    {"type":"AND"},
+    {"type":"OR"},
+
+  ],
+  "devices":[
     {"type":"Joint","id":"dev0","x":344,"y":8,"label":"Joint","state":{"direction":0}},
     {"type":"AND","id":"dev1","x":424,"y":8,"label":"i0 X"},
     {"type":"AND","id":"dev2","x":424,"y":64,"label":"S1 AND S2"},
     {"type":"OR","id":"dev3","x":688,"y":120,"label":"OR"},
-    {"type":"Joint","id":"dev4","x":920,"y":272,"label":"Joint","state":{"direction":0}},
+    //{"type":"Joint","id":"dev4","x":920,"y":272,"label":"Joint","state":{"direction":0}},
     {"type":"AND","id":"dev5","x":576,"y":48,"label":"AND"},
     {"type":"OR","id":"dev6","x":840,"y":264,"label":"X out"},
     {"type":"Joint","id":"dev7","x":360,"y":144,"label":"Joint","state":{"direction":0}},
@@ -73,7 +148,7 @@ if(sessionStorage.getItem("8bitCounter"))
     {"from":"dev2.in1","to":"dev25.out0"},
     {"from":"dev3.in0","to":"dev5.out0"},
     {"from":"dev3.in1","to":"dev12.out0"},
-    {"from":"dev4.in0","to":"dev6.out0"},
+    //{"from":"dev4.in0","to":"dev6.out0"},
     {"from":"dev5.in0","to":"dev1.out0"},
     {"from":"dev5.in1","to":"dev2.out0"},
     {"from":"dev6.in0","to":"dev3.out0"},
@@ -102,7 +177,7 @@ if(sessionStorage.getItem("8bitCounter"))
     {"from":"dev19.in1","to":"dev17.out0"},
     {"from":"dev24.in0","to":"dev26.out0"},
     {"from":"dev25.in0","to":"dev27.out0"}
-  ]
+  ]*/
 }/*{
         "width":x,
         "height":800,
@@ -260,35 +335,19 @@ else if(sessionStorage.getItem("8bitRingCounter")){
   "showToolbox":true,
   "toolbox":[
     {"type":"Joint"},
-    {"type":"DC"},
-    {"type":"LED"},
+    
     {"type":"PushOff"},
     {"type":"PushOn"},
-    {"type":"Toggle"},
-    {"type":"BUF"},
-    {"type":"NOT"},
     {"type":"AND"},
-    {"type":"NAND"},
     {"type":"OR"},
-    {"type":"NOR"},
-    {"type":"XOR"},
-    {"type":"XNOR"},
-    {"type":"OSC"},
-    {"type":"BusIn"},
     {"type":"BusOut"},
-    {"type":"RS-FF"},
-    {"type":"JK-FF"},
-    {"type":"T-FF"},
-    {"type":"D-FF"},
-    {"type":"D-FF-custom"},
-    {"type":"DSO","numInputs":8}
   ],
   "devices":[
     {"type":"AND","id":"dev0","x":736,"y":208,"label":"AND"},
     {"type":"AND","id":"dev1","x":736,"y":328,"label":"AND"},
-    {"type":"OR","id":"dev2","x":856,"y":272,"label":"OR"},
-    {"type":"Joint","id":"dev3","x":920,"y":280,"label":"Joint","state":{"direction":0}},
-    {"type":"BusOut","id":"dev4","x":408,"y":104,"label":"BusOut"},
+    {"type":"OR","id":"dev2","x":856,"y":272,"label":"Xout"},
+  //  {"type":"Joint","id":"dev3","x":920,"y":280,"label":"Joint","state":{"direction":0}},
+    {"type":"BusOut","id":"dev4","x":408,"y":104,"label":"i0 i1 i2 i3 "},
     {"type":"Joint","id":"dev5","x":576,"y":256,"label":"Joint","state":{"direction":0}},
     {"type":"Joint","id":"dev6","x":344,"y":112,"label":"Joint","state":{"direction":0}},
     {"type":"Joint","id":"dev7","x":344,"y":120,"label":"Joint","state":{"direction":0}},
@@ -302,7 +361,7 @@ else if(sessionStorage.getItem("8bitRingCounter")){
     {"type":"PushOn","id":"dev15","x":136,"y":216,"label":"S2"},
     {"type":"PushOff","id":"dev16","x":160,"y":488,"label":"~S2"},
     {"type":"PushOff","id":"dev17","x":152,"y":328,"label":"~S1"},
-    {"type":"BusOut","id":"dev18","x":424,"y":360,"label":"BusOut"},
+    {"type":"BusOut","id":"dev18","x":424,"y":360,"label":"i4 i5 i6 i7"},
     {"type":"PushOn","id":"dev19","x":288,"y":256,"label":"S0"}
   ],
   "connectors":[
@@ -312,7 +371,7 @@ else if(sessionStorage.getItem("8bitRingCounter")){
     {"from":"dev1.in1","to":"dev18.out0"},
     {"from":"dev2.in0","to":"dev0.out0"},
     {"from":"dev2.in1","to":"dev1.out0"},
-    {"from":"dev3.in0","to":"dev2.out0"},
+    //{"from":"dev3.in0","to":"dev2.out0"},
     {"from":"dev4.in0","to":"dev8.out0"},
     {"from":"dev4.in1","to":"dev6.out0"},
     {"from":"dev4.in2","to":"dev7.out0"},
@@ -471,11 +530,13 @@ else{
         obj.toolbox.push({
             "type":"8BitRingCounter"
         });
+        
     }
 
     var html=JSON.stringify(obj);
     document.querySelector(".simcir").innerHTML=html;
 }
+
 
 
 $("#counter").change(function(event) {

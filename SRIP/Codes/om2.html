@@ -23,7 +23,7 @@
 			pointer-events: none;
 		}
 	</style>
-	<title>MUX</title>
+	<title>ALU with function</title>
 </head>
 <body class="bg-light">
 	<div class="modal fade bd-example-modal-lg" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionsTitle" aria-hidden="true">
@@ -38,7 +38,7 @@
 				<div class="modal-body">
 					<p class="lead">This lab allows you to design and simulate any digital combinational or sequential circuit. Following instruction help you build the multiplexer circuit. A Javascript-based basic tool and simulation enigne is at the hear of this laboratory. You can create many circuits and test them with fixed or time-varying input signals. You can also see the outputs as values or time-varying waveforms. </p>
 					<h6>Multiplexer</h6>
-					a) MUX <img src="images/mux.png" class="img-fluid"><br>
+					a) ALU <img src="images/ALU.png" class="img-fluid"><br>
 					b) 8x1 MUX <img src="images/8x1.png" class="img-fluid">
 					<p>The tool consist of mainly two pannels: Left Pannel, Right Pannel.</p>
 					<ul>
@@ -59,7 +59,7 @@
 								</li>
 
 								<li>
-									<p>If you get stuck, and are not able to make the multiplexer, then use the load MUX buttons.</p>
+									<p>If you get stuck, and are not able to make the multiplexer, then use the load ALU/MUX buttons.</p>
 								</li>
 								<li>
 									<p>Click the "Clear Workspace" button to clear the simulation.</p>
@@ -70,7 +70,7 @@
 							<p><strong>Right Pannel:</strong> The right panel contains the workspace where you will simulate your experiment.</p>
 							<ol>
 								<li>
-									<p>The toolbox on the left contains the pre-made logic circuits you will require to build a MUX.</p>
+									<p>The toolbox on the left contains the pre-made logic circuits you will require to build a ALU/MUX.</p>
 									<div class="alert alert-info" role="alert">
 										In case you want to build a Flip-Flop, please open the Flip-Flop experiment page.
 									</div>
@@ -136,7 +136,7 @@
 						</div>
 						<h6>Implement the following & use the rule book for an overview</h6>
 						<ul>
-							<li> <b> 8X1 MUX </b>Requirements:<br> a Push On(6) <br>b AND gate(12) <br>c OR gate(3)</li>
+							<li> <b> ALU </b>Requirements:<br> a Push On(3) <br>b AND gate(4) <br>c OR gate(2)<br>d XOR gate (4)<br>e NOT gate(2)<br>f BusOut(2)</li>
 							<li> <b> 8X1 using 2X1 MUX </b>Requirements: <br> a Push On(4)<br> b AND gate(2) <br> c OR gate(1)<br> d Busout(2)</li>
 						</ul>
 						<button type="submit" class="btn  btn-outline-success">Save Changes</button><br><br>
@@ -144,7 +144,7 @@
 					</form>
 					<hr>
 					<div class="mx-auto">
-						<button type="submit" class="btn  btn-outline-info" id="load_counter">Load MUX</button><br><br>
+						<button type="submit" class="btn  btn-outline-info" id="load_counter">ALU</button><br><br>
 						<button type="submit" class="btn  btn-outline-info" id="load_rcounter">Load 8X1 MUX</button><br><br>
 						<button type="submit" class="btn  btn-outline-info" id="clear_workspace">Clear Workspace</button>
 					</div>
@@ -157,7 +157,7 @@
 		</div>
 
 
-		<script type="text/javascript" src="js/ommk.js"></script>
+		<script type="text/javascript" src="js/script2.js"></script>
 		<script type="text/javascript" src="../libraries/simcir.js"></script>
 		<script type="text/javascript" src="../libraries/simcir-basicset.js"></script>
 		<script type="text/javascript" src="../libraries/simcir-library.js"></script>
