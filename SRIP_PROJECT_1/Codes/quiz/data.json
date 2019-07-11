@@ -1,0 +1,92 @@
+{
+    "artciles": [
+        {
+            "q" : "What is a mulitplexer?",
+            "opt1" : "It is a type of decoder which decodes several inputs and gives one output",
+            "opt2" : "A multiplexer is a device which converts many signals into one",
+            "opt3" : "It takes one input and results into many output",
+            "answer" : "A multiplexer is a device which converts many signals into one",
+            "decription" :"A multiplexer (or MUX) is a device that selects one of several analog or digital input signals and forwards the selected input into a single line, depending on the active select lines."
+        },
+        {
+            "q" : "  Which combinational circuit is renowned for selecting a single input from multiple inputs & directing the binary information to output line?",
+            "opt1" : " Data Selector",
+            "opt2" : " Data distributor",
+            "opt3" : "Both data selector and data distributor",
+            "answer" : "Data Selector",
+            "description" :"Data Selector is another name of Multiplexer. A multiplexer (or MUX) is a device that selects one of several analog or digital input signals and forwards the selected input into a single line, depending on the active select lines."
+        },
+        {
+            "q" : "It is possible for an enable or strobe input to undergo an expansion of two or more MUX ICs to the digital multiplexer with the proficiency of large number of ___________",
+            "opt1" : "Inputs",
+            "opt2" : "Outputs",
+            "opt3" : "Select Lines",
+            "answer" : "Inputs",
+            "description" :"It is possible for an enable or strobe input to undergo an expansion of two or more MUX ICs to the digital multiplexer with the proficiency of large number of inputs."
+        },
+        {
+            "q" : "Which is the major functioning responsibility of the multiplexing combinational circuit?",
+            "opt1" : "Decoding the binary information",
+            "opt2" : "Generation of all minterms in an output function with OR-gate",
+            "opt3" : "Generation of selected path between multiple sources and a single destination",
+            "answer" : "Generation of selected path between multiple sources and a single destination",
+            "description":"The major functioning responsibility of the multiplexing combinational circuit is generation of selected path between multiple sources and a single destination because it makes the circuit too flexible."
+        },
+        {
+            "q" : " What is the function of an enable input on a multiplexer chip?",
+            "opt1" : "To apply Vcc",
+            "opt2" : "To connect ground",
+            "opt3" : "To active the entire chip",
+            "answer" : " c) To active the entire chip",
+            "description":" Explanation: Enable input is used to active the chip, when enable is high the chip works (ACTIVE), when enable is low the chip does not work (MEMORY). However, Enable can be Active-High or Active-Low, indicating it is active either when it is connected to VCC or GND respectively."
+        },
+        {
+            "q" : "One multiplexer can take the place of ___________",
+            "opt1" : "Several SSI logic gates",
+            "opt2" : "Several SSI logic gates or combinational logic circuits",
+            "opt3" : "Combinational logic circuits",
+            "answer" : "Several SSI logic gates or combinational logic circuits",
+            "decription" :"A multiplexer (or MUX) is a device that selects one of several analog or digital input signals and forwards the selected input into a single line, depending on the active select lines. Since many operational behaviour can be performed by using a multiplexer. Whereas, a combinational circuit is a combination of many logic gates which makes the circuit more complex."
+        },
+        {
+            "q" : "A digital multiplexer is a combinational circuit that selects ___________",
+            "opt1" : "One digital information from several sources and transmits the selected one",
+            "opt2" : "Many digital information and convert them into one",
+            "opt3" : "Many decimal outputs and accepts the selected information",
+            "answer" : "One digital information from several sources and transmits the selected one",
+            "description" : "A digital multiplexer is a combinational circuit that selects one digital information from several sources and transmits the selected information on a single output line depending on the status of the select lines. That is why it is also known as a data selector."
+        },
+        {
+           "q" : "In a multiplexer, the selection of a particular input line is controlled by ___________",
+            "opt1" : "Data controller",
+            "opt2" : "Selected lines",
+            "opt3" : "Both data controller and selected lines",
+            "answer" : "Selected lines",
+            "description" : "The selection of a particular input line is controlled by a set of selected lines in a multiplexer, which helps to select a particular input from several sources."
+        },
+        {
+            "q" : "If the number of n selected input lines is equal to 2^m then it requires _____ select lines.",
+            "opt1" : "2",
+            "opt2" : "m",
+            "opt3" : "n",
+            "answer" : "m",
+            "description" : "If the number of n selected input lines is equal to 2^m then it requires m select lines to select one of m select lines."
+        },
+        {
+            "q" : "How many select lines would be required for an 8-line-to-1-line multiplexer?",
+            "opt1" : "2",
+            "opt2" : "4",
+            "opt3" : "3",
+            "answer" : "3",
+            "description" : "2^n input lines, n control lines and 1 output line available for MUX. Here, 8 input lines mean two 3 inputs. So, 3 control lines are possible. Depending on the status of the select lines, the input is selected and fed to the output."
+        },
+        {
+            "q": "A basic multiplexer principle can be demonstrated through the use of a ___________",
+            "opt1": "Single-pole relay",
+            "opt2": "DPDT switch",
+            "opt3": "Rotary switch",
+            "answer": "Rotary switch",
+            "description" : "A basic multiplexer principle can be demonstrated through the use of a rotary switch. Since its behaviour is similar to the multiplexer. There are around 10 digits out of which one is selected one at a time and fed to the output."
+        }
+    ]
+}
